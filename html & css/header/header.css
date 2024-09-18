@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+.container {
+  width: 1920px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+}
+.tourmates-logo {
+  width: 200px;
+  height: 80px;
+  margin: 13px 228px 22px 30px;
+}
+.tourmates-logo img {
+  width: 183px;
+  height: 69px;
+  border-radius: 10px 0px 0px 10px;
+  margin: 4px 9px 7px 8px;
+}
+.search-hotel-group {
+  width: 1062px;
+  height: 101px;
+  margin: 8px 285px 6px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotel-cab-flight {
+  display: flex;
+  gap: 1.5px;
+  margin-bottom: 1px;
+}
+.hotel-cab-flight button {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  border-radius: 12px 12px 0px 0px;
+}
+.hotel-cab-flight button img {
+  width: 119px;
+  height: 40px;
+}
+.hotel-search-div {
+  width: 1062px;
+  height: 60px;
+  border-radius: 20px 20px;
+  background: #eeeeee;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.location-picker {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px 0px 0px 20px;
+  width: 277px;
+  height: 54px;
+  margin: 3px 0px 3px 3px;
+  justify-content: center;
+}
+
+.location-picker span {
+  width: 206px;
+  height: 16px;
+  margin: 6px 43px 5px 28px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+.location-picker input {
+  border: none;
+  margin-left: 28px;
+  width: 229.24px;
+  height: 13.17px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19.85px;
+}
+.check-in {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 199px;
+  height: 54px;
+  justify-content: center;
+}
+.check-in span {
+  width: 63px;
+  height: 18px;
+  margin: 6px 124px 1px 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+.check-in input {
+  border: none;
+  margin-left: 12px;
+  width: 101px;
+  height: 17px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19.85px;
+}
+.check-in input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.check-out {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 199px;
+  height: 54px;
+  justify-content: center;
+}
+.check-out span {
+  width: 68px;
+  height: 18px;
+  margin: 6px 120px 1px 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+.check-out input {
+  border: none;
+  margin-left: 12px;
+  width: 101px;
+  height: 17px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19.85px;
+}
+.check-out input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.room-guest {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 200px;
+  height: 54px;
+  justify-content: center;
+}
+.room-guest span {
+  width: 92px;
+  height: 18px;
+  margin: 6px 120px 1px 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+.room-guest input {
+  border: none;
+  margin-left: 12px;
+  width: 145px;
+  height: 17px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19.85px;
+}
+.hotel-search-button {
+  width: 173px;
+  height: 54px;
+  background-color: #ff885b;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotel-search-button p {
+  width: 104px;
+  height: 35px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.hotel-search-button p .plex-img {
+  width: 20px;
+}
+.profile-img img{
+    width: 85px;
+    height: 46px;
+    border-radius: 5px 0px 0px 5px;
+    margin: 27px 25px 42px 0px;
+}

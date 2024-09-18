@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.properties-and-filter-group {
+  display: flex;
+  align-items: center;
+  width: 1180px;
+  margin: auto;
+}
+.properties-and-filter-group .showing-properties {
+  width: 374px;
+  height: 37px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 24px 0px 17px 16px;
+}
+.filter-by {
+  height: 42px;
+  width: 628px;
+  border-radius: 10px;
+  margin: 19px 4px 17px auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.near-by {
+  width: 299px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 30px;
+}
+.near-by label,
+.sort-by label {
+  height: 30.88px;
+  width: auto !important;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 29.5px;
+}
+.select-tag-near-by,
+.select-tag-sort-by {
+  width: 212px;
+  height: 30.44px;
+  padding-left: 8px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: 1px;
+}
+.near-by select,
+.sort-by select {
+  width: 200px;
+  height: 30.44px;
+  border-radius: 10px;
+  border: none;
+  outline: none !important;
+  font-size: 13px;
+  font-weight: 400;
+}
+.sort-by {
+  width: 299px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-container {
+  margin: 0px auto 16px;
+  border-radius: 20px;
+  height: 370px;
+  width: 1180px;
+  box-shadow: 1px 0px 10px 0px #00000033;
+  padding: 10px 16px 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-container-left {
+  width: 400px;
+  height: 348px;
+  border-radius: 20px;
+}
+.card-container-left .main-img {
+  width: 400px;
+  height: 272px;
+  border-radius: 20px;
+}
+.sub-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 399px;
+  gap: 6px;
+  border-radius: 20px;
+}
+.sub-images img {
+  height: 70px;
+  width: 75px;
+  border-radius: 10px;
+}
+.card-container-right {
+  width: 743px;
+  height: 343px;
+  margin-left: 5px;
+  position: relative;
+}
+.hotel-name-container {
+  height: 84px;
+  width: 376.65px;
+  border-radius: 10px;
+  margin: 0px 161.3px 140px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hotel-name-text {
+  width: 315.24px;
+  height: 39px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: black;
+}
+.hotel-name-text img {
+  width: 75.24px;
+  height: 16.94px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.hotel-distance {
+  width: 376.65px;
+  height: 97px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7a7a7a;
+}
+.hotel-reviews {
+  width: 209px;
+  height: 23px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #67b817;
+}
+.hotel-reviews span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #67b817;
+}
+.pool-img {
+  width: 312px;
+  height: 27px;
+  margin: 0px auto 21px 16px;
+}
+.pool-img img {
+  width: 312px;
+  height: 27px;
+}
+.discount-cancellation-div {
+  width: 743px;
+  height: 68px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancellation-div {
+  height: 30px;
+  width: 292px;
+  border-radius: 10px;
+  background-color: #23c686;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
+  margin-right: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discount-div {
+  height: 31.27px;
+  width: 316.93px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #7a7a7a;
+}
+.discount-div span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7a7a7a;
+}
+.discount-div img {
+  width: 31.32px;
+  height: 31.27px;
+}
+.right-side-arrow {
+  height: 29.37px;
+  width: 29.37px;
+  margin-left: 19px;
+}
+.price-verified-container {
+  width: 182px;
+  height: 272px;
+  border-radius: 20px;
+  margin: 0px 16px 0px 7px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.price-verified-container .verified {
+  width: 98.59px;
+  height: 32.57px;
+  border-radius: 10px;
+}
+.add-to-favourites {
+  margin-top: 9px;
+  height: 41px;
+  width: 103px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.add-to-favourites img {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+}
+.add-to-favourites p {
+  width: 51px;
+  height: 27px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+}
+.room-left {
+  width: 90.25px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 7.7px;
+  align-content: center;
+  padding-left: 8px;
+  margin-bottom: 56px;
+  border-radius: 10px;
+  background-color: #ffa5a5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ff0000;
+}
+.hotel-prices-div {
+  width: 143.77px;
+  height: 72.68px;
+  margin: auto 8.23px 14.32px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hotel-prices-div .hotel-max-price {
+  height: 27.36px;
+  width: 45.41px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ff4d00;
+  margin: 0px auto 0px;
+  text-decoration: line-through;
+  padding: 4px;
+}
+.hotel-prices-div .hotel-min-price{
+    height: 29px;
+    width: 137px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16.5px;
+    margin: 0px auto 0px;
+}
+.hotel-prices-div .hotel-min-price span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.hotel-prices-div .hotel-stay-time{
+    width: 131.82px;
+    height: 15.24px;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: end;
+    line-height: 15px;
+} 

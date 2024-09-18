@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+.filter-container {
+  width: 397px;
+  height: 1672px;
+  margin: 36px 22px 43px 159px;
+  background: #eeeeee80;
+  border-radius: 10px;
+}
+.fiter-text {
+  margin: auto 20px 0px 22px;
+  width: 355px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  color: black;
+}
+.filter-suggested {
+  margin: 0px 21px 9px 21px;
+  width: 355px;
+  height: 199px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.filter-suggested p {
+  width: 334px;
+  height: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 7px auto 9px;
+  color: #7a7a7a;
+}
+.unmarried-couple {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee80;
+}
+.pet-friendly {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee80;
+}
+
+.breakfast-included {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee80;
+}
+.non-ac-rooms {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee80;
+}
+.unmarried-couple label,
+.pet-friendly label,
+.breakfast-included label,
+.non-ac-rooms label {
+  width: 267px;
+  height: 21px;
+  margin: 6px 21px 9px 6px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.unmarried-couple input,
+.pet-friendly input,
+.breakfast-included input,
+.non-ac-rooms input,
+.yes-checkbox input,
+.no-checkbox input {
+  margin: 6px 0px 6px 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 3px solid black;
+  appearance: none;
+  cursor: pointer;
+}
+.unmarried-couple input::after,
+.pet-friendly input::after,
+.breakfast-included input::after,
+.non-ac-rooms input::after,
+.yes-checkbox input::after,
+.no-checkbox input::after {
+  content: "";
+  position: relative;
+  top: -1px;
+  left: 4px;
+  width: 6px;
+  height: 14px;
+  border: 3px solid black;
+  display: none;
+  border-bottom: none;
+  border-right: none;
+  rotate: 221deg;
+}
+.unmarried-couple input:checked::after,
+.pet-friendly input:checked::after,
+.breakfast-included input:checked::after,
+.non-ac-rooms input:checked::after,
+.yes-checkbox input:checked::after,
+.no-checkbox input:checked::after {
+  display: block;
+}
+.air-conditioned {
+  width: 355px;
+  height: 112px;
+  border-radius: 10px;
+  margin: 0px auto 9px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.air-conditioned p {
+  width: 334px;
+  height: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 7px auto 9px;
+  color: #7a7a7a;
+}
+.yes-checkbox {
+  height: 36px;
+  width: 330px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no-checkbox {
+  height: 36px;
+  width: 330px;
+  border-radius: 5px;
+  margin: 0px auto 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yes-checkbox label,
+.no-checkbox label {
+  height: 21px;
+  width: 267px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 6px 21px 9px 6px;
+}
+.price-range {
+  width: 355px;
+  height: 112px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 0px auto 8px;
+  display: flex;
+  flex-direction: column;
+}
+.price-range p {
+  height: 18px;
+  width: 334px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7a7a7a;
+  margin: 7px 9px 3px 12px;
+}
+.range-meter {
+  margin: 0px auto 5px;
+  width: 316px;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.range-meter input {
+  width: 316px;
+  position: absolute;
+  bottom: 0px;
+  height: 1px;
+  accent-color: #ff0000;
+}
+
+.range-meter img {
+  height: 52px;
+  width: 290px;
+  margin-left: 11px;
+}
+.range-meter .light-circle {
+  height: 15px;
+  width: 15px;
+  left: -1px;
+  bottom: -7px;
+  background-color: #ff885b;
+  position: absolute;
+  border-radius: 50%;
+}
+.price-rs {
+  display: flex;
+  margin: 0px 19px 13px 15px;
+  height: 11px;
+  width: auto;
+  align-items: center;
+  gap: 50px;
+}
+.price-rs .price-low {
+  height: 11px;
+  width: 23px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+}
+.price-rs .price-max {
+  height: 11px;
+  width: 51px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  margin-left: 195px;
+}
+.rating {
+  width: 355px;
+  height: 248px;
+  margin: 0px auto 6px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rating p {
+  width: 334px;
+  height: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 7px auto 9px;
+  color: #7a7a7a;
+}
+.five-star-rating {
+  width: 330px;
+  height: 36px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.four-star-rating {
+  width: 330px;
+  height: 36px;
+  margin: 0px auto 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.three-star-rating {
+  width: 330px;
+  height: 36px;
+  margin: 0px auto 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.two-star-rating {
+  width: 330px;
+  height: 36px;
+  margin: 0px auto 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.one-star-rating {
+  width: 330px;
+  height: 36px;
+  margin: 0px auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.five-star-rating label,
+.four-star-rating label,
+.three-star-rating label,
+.two-star-rating label,
+.one-star-rating label {
+  width: 267px;
+  height: 21px;
+  margin: auto 21px auto 6px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+.five-star-rating label img,
+.four-star-rating label img,
+.three-star-rating label img,
+.two-star-rating label img,
+.one-star-rating label img {
+  width: 75.24px;
+  height: 16.94px;
+  margin: 0px 138.76px 0.06px 5px;
+}
+.five-star-rating input,
+.four-star-rating input,
+.three-star-rating input,
+.two-star-rating input,
+.one-star-rating input {
+  margin: 6px 0px 6px 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 3px solid black;
+  appearance: none;
+  cursor: pointer;
+}
+.five-star-rating input::after,
+.four-star-rating input::after,
+.three-star-rating input::after,
+.two-star-rating input::after,
+.one-star-rating input::after {
+  content: "";
+  position: relative;
+  top: -1px;
+  left: 4px;
+  width: 6px;
+  height: 14px;
+  border: 3px solid black;
+  display: none;
+  border-bottom: none;
+  border-right: none;
+  rotate: 221deg;
+}
+.five-star-rating input:checked::after,
+.four-star-rating input:checked::after,
+.three-star-rating input:checked::after,
+.two-star-rating input:checked::after,
+.one-star-rating input:checked::after {
+  display: block;
+}
+.property-rules,
+.room-view,
+.room-amenities {
+  width: 355px;
+  height: 199px;
+  margin: 0px auto 6px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.property-rules p,
+.room-view p,
+.room-amenities p {
+  width: 334px;
+  height: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 7px auto 9px;
+  color: #7a7a7a;
+}
+.unmarried-couple-friendly,
+.room-with-balcony,
+.bathtub {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.smoking-allowed,
+.gardern-view,
+.tea-maker {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.alcohol-allowed,
+.city-view,
+.geyser {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.pets-friendly,
+.beach-view,
+.interconnected-room {
+  width: 330px;
+  height: 36px;
+  border-radius: 5px;
+  margin: 0px auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+.unmarried-couple-friendly label,
+.smoking-allowed label,
+.alcohol-allowed label,
+.pets-friendly label,
+.room-with-balcony label,
+.beach-view label,
+.city-view label,
+.gardern-view label,
+.bathtub label,
+.tea-maker label,
+.geyser label,
+.interconnected-room label {
+  width: 267px;
+  height: 21px;
+  margin: 6px 21px 9px 6px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.unmarried-couple-friendly input,
+.smoking-allowed input,
+.alcohol-allowed input,
+.pets-friendly input,
+.room-with-balcony input,
+.beach-view input,
+.city-view input,
+.gardern-view input,
+.bathtub input,
+.tea-maker input,
+.geyser input,
+.interconnected-room input {
+  margin: 6px 0px 6px 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 3px solid black;
+  appearance: none;
+  cursor: pointer;
+}
+.unmarried-couple-friendly input::after,
+.smoking-allowed input::after,
+.alcohol-allowed input::after,
+.pets-friendly input::after,
+.room-with-balcony input::after,
+.beach-view input::after,
+.city-view input::after,
+.gardern-view input::after,
+.bathtub input::after,
+.tea-maker input::after,
+.geyser input::after,
+.interconnected-room input::after {
+  content: "";
+  position: relative;
+  top: -1px;
+  left: 4px;
+  width: 6px;
+  height: 14px;
+  border: 3px solid black;
+  display: none;
+  border-bottom: none;
+  border-right: none;
+  rotate: 221deg;
+}
+.unmarried-couple-friendly input:checked::after,
+.smoking-allowed input:checked::after,
+.alcohol-allowed input:checked::after,
+.pets-friendly input:checked::after,
+.room-with-balcony input:checked::after,
+.beach-view input:checked::after,
+.city-view input:checked::after,
+.gardern-view input:checked::after,
+.bathtub input:checked::after,
+.tea-maker input:checked::after,
+.geyser input:checked::after,
+.interconnected-room input:checked::after {
+  display: block;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <link rel="stylesheet" href="filter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="filter-container">
+      <p class="fiter-text">Filters :</p>
+      <div class="filter-suggested">
+        <p>Suggested:</p>
+        <div class="unmarried-couple">
+          <input type="checkbox" id="unmarried-couple" checked />
+          <label for="unmarried-couple">Unmarried Couple Friendly</label>
+        </div>
+        <div class="pet-friendly">
+          <input type="checkbox" id="pet-friendly" />
+          <label for="pet-friendly">Pet Friendly</label>
+        </div>
+        <div class="breakfast-included">
+          <input type="checkbox" id="breakfast-included" />
+          <label for="breakfast-included">Breakfast Included</label>
+        </div>
+        <div class="non-ac-rooms">
+          <input type="checkbox" id="non-ac-rooms" />
+          <label for="non-ac-rooms">Non-AC Rooms</label>
+        </div>
+      </div>
+      <div class="air-conditioned">
+        <p>Air Conditioned:</p>
+        <div class="yes-checkbox">
+          <input
+            type="checkbox"
+            name="air-condition"
+            id="yes-checkbox"
+            checked
+          />
+          <label for="yes-checkbox">Yes</label>
+        </div>
+        <div class="no-checkbox">
+          <input type="checkbox" name="air-condition" id="no-checkbox" />
+          <label for="no-checkbox">No</label>
+        </div>
+      </div>
+      <div class="price-range">
+        <p>Price Range:</p>
+        <div class="range-meter">
+          <img src="../../assets/Vector 1.png" alt="" />
+          <div class="light-circle"></div>
+          <input
+            type="range"
+            id="price-range"
+            min="0"
+            max="100000"
+            value="100000"
+          />
+        </div>
+        <div class="price-rs">
+          <span class="price-low">Rs 0</span>
+          <span class="price-max">Rs 100,000</span>
+        </div>
+      </div>
+      <div class="rating">
+        <p>Rated:</p>
+        <div class="five-star-rating">
+          <input type="checkbox" id="five-star-rating" checked />
+          <label for="five-star-rating"
+            >5 Star <img src="../../assets/Group 13.png" alt=""
+          /></label>
+        </div>
+        <div class="four-star-rating">
+          <input type="checkbox" id="four-star-rating" checked />
+          <label for="four-star-rating"
+            >4 Star <img src="../../assets/Group 13 (1).png" alt=""
+          /></label>
+        </div>
+        <div class="three-star-rating">
+          <input type="checkbox" id="three-star-rating" checked />
+          <label for="three-star-rating"
+            >3 Star <img src="../../assets/Group 13 (4).png" alt=""
+          /></label>
+        </div>
+        <div class="two-star-rating">
+          <input type="checkbox" id="two-star-rating" />
+          <label for="two-star-rating"
+            >2 Star <img src="../../assets/Group 13 (3).png" alt=""
+          /></label>
+        </div>
+        <div class="one-star-rating">
+          <input type="checkbox" id="one-star-rating" />
+          <label for="one-star-rating"
+            >1 Star <img src="../../assets/Group 13 (2).png" alt=""
+          /></label>
+        </div>
+      </div>
+      <div class="property-rules">
+        <p>Property Rules:</p>
+        <div class="unmarried-couple-friendly">
+          <input type="checkbox" id="unmarried-couple-friendly" checked />
+          <label for="unmarried-couple-friendly"
+            >Unmarried Couple Friendly</label
+          >
+        </div>
+        <div class="smoking-allowed">
+          <input type="checkbox" id="smoking-allowed" />
+          <label for="smoking-allowed">Smoking Allowed</label>
+        </div>
+        <div class="alcohol-allowed">
+          <input type="checkbox" id="alcohol-allowed" />
+          <label for="alcohol-allowed">Alcohol Allowed</label>
+        </div>
+        <div class="pets-friendly">
+          <input type="checkbox" id="pets-friendly" />
+          <label for="pets-friendly">Pets Friendly</label>
+        </div>
+      </div>
+      <div class="room-view">
+        <p>Room View:</p>
+        <div class="room-with-balcony">
+          <input type="checkbox" id="room-with-balcony" checked />
+          <label for="room-with-balcony"
+            >Rooms With Balcony</label
+          >
+        </div>
+        <div class="gardern-view">
+          <input type="checkbox" id="gardern-view" />
+          <label for="gardern-view">Garden View</label>
+        </div>
+        <div class="city-view">
+          <input type="checkbox" id="city-view" />
+          <label for="city-view">City View</label>
+        </div>
+        <div class="beach-view">
+          <input type="checkbox" id="beach-view" />
+          <label for="beach-view">Beach View</label>
+        </div>
+      </div>
+      <div class="room-amenities">
+        <p>Room Amenities:</p>
+        <div class="bathtub">
+          <input type="checkbox" id="bathtub" checked />
+          <label for="bathtub"
+            >Bathtub</label
+          >
+        </div>
+        <div class="tea-maker">
+          <input type="checkbox" id="tea-maker" />
+          <label for="tea-maker">Tea Maker</label>
+        </div>
+        <div class="geyser">
+          <input type="checkbox" id="geyser" />
+          <label for="geyser">Geyser</label>
+        </div>
+        <div class="interconnected-room">
+          <input type="checkbox" id="interconnected-room" />
+          <label for="interconnected-room">Interconnected Room</label>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
